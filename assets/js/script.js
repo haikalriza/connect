@@ -1,22 +1,5 @@
-/*=============== SHOW MENU ===============*/
+const toggle = document.querySelector(".theme-toggle");
 
-
-/*=============== REMOVE MENU MOBILE ===============*/
-
-
-/*=============== SHADOW HEADER ===============*/
-
-
-/*=============== EMAIL JS ===============*/
-
-
-/*=============== SHOW SCROLL UP ===============*/ 
-
-
-/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
-
-
-/*=============== DARK LIGHT THEME ===============*/ 
-
-
-/*=============== SCROLL REVEAL ANIMATION ===============*/
+toggle.addEventListener("click", () => {
+  document.body.classList.toggle("dark");
+});
