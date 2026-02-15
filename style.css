@@ -197,3 +197,56 @@ html {
   text-decoration: none;
 }
 
+/* ==========================================
+   HOTEL CANCELLATION PAGE IMPROVEMENTS
+========================================== */
+
+/* ---- Project Resources Section ---- */
+.resources-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+}
+
+.resources-card {
+  background-color: #ffffff;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+
+.resource-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+
+/* ---- Presentation Preview Section ---- */
+.preview-section {
+  background-color: #ffffff;
+  padding: 80px 0;
+  text-align: center;
+}
+
+.preview-title {
+  margin-bottom: 40px;
+  font-size: 26px;
+  font-weight: 600;
+}
+
+.preview-frame {
+  display: block;
+  width: 95%;
+  height: 750px;
+  margin: auto;
+  border-radius: 20px;
+  border: none;
+  box-shadow: 0 12px 45px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ---- Better Button Spacing on Hero ---- */
+.hero-text .contact-btn {
+  margin-right: 15px;
+  margin-top: 15px;
+}
