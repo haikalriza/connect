@@ -416,6 +416,26 @@ body.dark .contact-btn:hover {
   color: var(--muted);
 }
 
+/* ==========================================
+   PROJECT RESOURCES
+========================================== */
+
+.resources-section {
+  padding: 80px 0;
+}
+
+.resources-card {
+  text-align: center;
+}
+
+.resource-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
 
 
 /* ==========================================
