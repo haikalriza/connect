@@ -319,7 +319,8 @@ body.dark .contact-btn:hover {
 }
 
 .project-card--narrow {
-  max-width: 520px;
+  max-width: 640px;
+  min-height: 560px;
 }
 
 .project-card h3 {
