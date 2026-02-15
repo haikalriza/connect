@@ -27,10 +27,68 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
 .highlight {
   background: #ffd6c9;
   padding: 2px 6px;
   font-weight: 600;
+}
+
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 25px 80px;
+  position: sticky;
+  top: 0;
+  background: #ffffff;
+  z-index: 100;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 20px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.nav a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  transition: 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #000;
 }
 
 
@@ -44,8 +102,8 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
-  position: relative;
   gap: 60px;
+  position: relative;
 }
 
 .hero-text {
@@ -66,7 +124,6 @@ body {
   color: #555;
   line-height: 1.7;
   margin-bottom: 20px;
-  font-weight: 400;
 }
 
 .scroll {
@@ -77,6 +134,24 @@ body {
   color: #777;
   font-size: 14px;
   font-weight: 500;
+}
+
+
+/* ==========================================
+   HERO STATS & BUTTONS
+========================================== */
+
+.hero-stats {
+  margin-top: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.hero-buttons {
+  margin-top: 30px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
 }
 
 
@@ -102,11 +177,6 @@ body {
   transform: translateY(-2px);
 }
 
-.hero-text .contact-btn {
-  margin-right: 15px;
-  margin-top: 15px;
-}
-
 
 /* ==========================================
    HERO IMAGE / PROJECT CARD
@@ -119,80 +189,146 @@ body {
   align-items: center;
 }
 
-.hero-image .project-card {
-  width: 100%;
-  max-width: 900px;
-  padding: 50px;
-  border-radius: 24px;
-  background-color: #ffffff;
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
-  font-size: 17px;
-  line-height: 1.8;
-  font-weight: 400;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+.image-wrapper img {
+  max-width: 350px;
+  border-radius: 16px;
 }
 
-.hero-image .project-card:hover {
+.project-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.project-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 35px 90px rgba(0, 0, 0, 0.1);
 }
 
-.hero-image .project-card h3 {
-  font-size: 24px;
-  margin-bottom: 18px;
+.project-card--narrow {
+  max-width: 500px;
+}
+
+.project-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
   font-weight: 600;
 }
 
-.hero-image .project-card ul {
-  margin-top: 15px;
-  padding-left: 20px;
-}
-
-.hero-image .project-card li {
-  margin-bottom: 10px;
-}
-
-.hero-image .project-card hr {
-  margin: 25px 0;
-  border: none;
-  height: 1px;
-  background: rgba(0, 0, 0, 0.08);
+.project-card p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 15px;
 }
 
 
 /* ==========================================
-   RESPONSIVE DESIGN
+   PROJECT GRID
+========================================== */
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+
+/* ==========================================
+   ABOUT & PROJECT SECTIONS
+========================================== */
+
+.about,
+.projects {
+  padding: 100px 0;
+}
+
+.about-text {
+  max-width: 750px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 17px;
+  color: #555;
+}
+
+
+/* ==========================================
+   SOCIAL ICONS
+========================================== */
+
+.socials {
+  position: absolute;
+  bottom: 40px;
+  right: 80px;
+  display: flex;
+  gap: 15px;
+}
+
+.socials a {
+  font-size: 18px;
+  color: #777;
+  transition: 0.3s ease;
+}
+
+.socials a:hover {
+  color: #000;
+}
+
+
+/* ==========================================
+   PREVIEW SECTION
+========================================== */
+
+.preview-section {
+  padding: 80px 0;
+  text-align: center;
+}
+
+.preview-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.preview-frame {
+  width: 90%;
+  max-width: 1000px;
+  height: 600px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ==========================================
+   RESPONSIVE
 ========================================== */
 
 @media (max-width: 992px) {
 
+  .header {
+    padding: 20px 30px;
+  }
+
   .hero {
     flex-direction: column;
-    min-height: auto;
     padding: 60px 30px;
-    gap: 40px;
+    text-align: center;
   }
 
   .hero-text {
     max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-text .contact-btn {
-    margin-right: 0;
   }
 
   .hero-image {
     width: 100%;
   }
 
-  .hero-image .project-card {
-    max-width: 100%;
-    padding: 30px;
-  }
-
-  .header {
-    padding: 20px 30px;
+  .socials {
+    position: static;
+    margin-top: 30px;
+    justify-content: center;
   }
 
   .about,
