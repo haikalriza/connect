@@ -418,23 +418,27 @@ body.dark .contact-btn:hover {
 }
 
 /* ==========================================
-   PROJECT RESOURCES
+   PREVIEW SECTION
 ========================================== */
 
-.resources-section {
+.preview-section {
   padding: 80px 0;
-}
-
-.resources-card {
   text-align: center;
 }
 
-.resource-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 20px;
+.preview-title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.preview-frame {
+  width: min(90%, 1000px);
+  height: 600px;
+  border: none;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  background: var(--surface);
 }
 
 
@@ -493,6 +497,9 @@ body.dark .contact-btn:hover {
     padding: 10px 18px;
   }
 
+  .preview-frame {
+    height: 420px;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {
