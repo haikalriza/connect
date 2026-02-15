@@ -59,7 +59,6 @@ a {
 
 .header {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 25px 80px;
   position: sticky;
@@ -74,6 +73,7 @@ a {
 }
 
 .nav {
+  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 25px;
