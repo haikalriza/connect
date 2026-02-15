@@ -1,48 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Hotel Cancellation Prediction | Haikal Riza</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Cancellation Prediction | Haikal Riza</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <a href="index.html">← Back to Home</a>
+  <!-- HEADER (Same as Main Page) -->
+  <header class="header">
+    <div class="logo">H</div>
 
-        <h1>Hotel Cancellation Prediction</h1>
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Me</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <button class="contact-btn">Contact Me</button>
+      <i class="ri-moon-line theme-toggle"></i>
+    </nav>
+  </header>
 
-        <h2>Project Overview</h2>
-        <p>
-            This project aims to predict hotel booking cancellations using machine learning.
-            The objective was to identify high-risk reservations and reduce revenue loss.
-        </p>
-
-        <h2>Business Problem</h2>
-        <p>
-            Cancellation rates increased from 15% to 37%, putting €4M annual revenue at risk.
-            The goal was to build a predictive model to flag risky bookings.
-        </p>
-
-        <h2>Approach</h2>
-        <ul>
-            <li>Data cleaning and preprocessing</li>
-            <li>Exploratory Data Analysis (EDA)</li>
-            <li>Feature engineering</li>
-            <li>Model comparison (Logistic Regression, Decision Tree, Random Forest)</li>
-            <li>Evaluation using ROC-AUC & F1-score</li>
-        </ul>
-
-        <h2>Results</h2>
-        <p>
-            The best model achieved 82% accuracy and improved early detection of cancellation risk.
-        </p>
-
-        <h2>Project Deck</h2>
-        <p>
-            <a href="your-deck-link.pdf" target="_blank">View Full Presentation Deck</a>
-        </p>
+  <!-- HERO SECTION -->
+  <section class="hero" style="min-height: 60vh;">
+    <div class="hero-text">
+      <h1>Hotel Cancellation Prediction</h1>
+      <p>
+        A machine learning initiative designed to transform cancellation
+        risk into a controllable strategic lever.
+      </p>
     </div>
+  </section>
 
+  <!-- PROJECT CONTENT -->
+  <section class="projects">
+    <div class="container">
+
+      <div class="project-card" style="margin-bottom: 40px;">
+        <h3>Project Summary</h3>
+
+        <p><strong>Context:</strong><br>
+        Haro Hotel, a futuristic Japanese-style resort, experienced a surge in
+        booking cancellations from 15% in 2017 to 37% in 2018. This increase
+        put approximately €4.02M in annual revenue at risk. The trend was
+        structurally driven by the digitalization of room reservations,
+        increasing booking flexibility but lowering customer commitment.
+        </p>
+
+        <p><strong>Goals:</strong><br>
+        Reduce the cancellation rate from 37% to 20% within six months by:
+        identifying key cancellation drivers, predicting high-risk bookings,
+        and designing targeted revenue recovery strategies.
+        </p>
+
+        <p><strong>Process:</strong><br>
+        The project followed a structured analytics workflow:
+        business understanding → data preparation → cleaning →
+        exploratory data analysis (EDA). Diagnostic analysis was conducted
+        using Python’s <em>statsmodels</em> to identify key drivers.
+        A tree-based classification model (Gradient Boosting with GridSearch CV)
+        was developed to predict high-risk bookings.
+        </p>
+
+        <p><strong>Output:</strong><br>
+        The model detects 77% of cancellations, enabling proactive
+        interventions such as milestone-based confirmations and
+        partial deposits for high-risk bookings. Retaining 60% of predicted
+        cancellations would reduce the overall rate to 20% and recover
+        over 35% of at-risk revenue.
+        </p>
+      </div>
+
+
+      <div class="project-card">
+        <h3>Scope of Work / Achievements</h3>
+
+        <ul>
+          <li>Developed a tree-based Gradient Boosting classification model detecting 77% of high-risk cancellations.</li>
+          <li>Identified five key cancellation drivers explaining 83% of total risk.</li>
+          <li>Analyzed 2018 performance showing a 21.9% YoY increase, risking €4.02M annual revenue.</li>
+          <li>Designed a retention strategy projected to recover 35% of at-risk revenue by reducing cancellation rate to 20%.</li>
+        </ul>
+      </div>
+
+      <div style="margin-top:40px;">
+        <a href="index.html" class="contact-btn">
+          ← Back to Portfolio
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
