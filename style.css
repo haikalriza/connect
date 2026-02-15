@@ -402,26 +402,6 @@ body.dark .contact-btn:hover {
 }
 
 
-/* ==========================================
-   PROJECT RESOURCES
-========================================== */
-
-.resources-section {
-  padding: 80px 0;
-}
-
-.resources-card {
-  text-align: center;
-}
-
-.resource-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 16px;
-  flex-wrap: wrap;
-  margin-top: 20px;
-}
-
 .card-divider {
   margin: 20px 0;
   border: none;
@@ -436,30 +416,6 @@ body.dark .contact-btn:hover {
   color: var(--muted);
 }
 
-
-/* ==========================================
-   PREVIEW SECTION
-========================================== */
-
-.preview-section {
-  padding: 80px 0;
-  text-align: center;
-}
-
-.preview-title {
-  font-size: 24px;
-  font-weight: 600;
-  margin-bottom: 30px;
-}
-
-.preview-frame {
-  width: min(90%, 1000px);
-  height: 600px;
-  border: none;
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
-  background: var(--surface);
-}
 
 
 /* ==========================================
@@ -516,9 +472,6 @@ body.dark .contact-btn:hover {
     padding: 10px 18px;
   }
 
-  .preview-frame {
-    height: 420px;
-  }
 }
 
 @media (prefers-reduced-motion: reduce) {
