@@ -250,3 +250,65 @@ html {
   margin-right: 15px;
   margin-top: 15px;
 }
+
+/* ==========================================
+   HOTEL CANCELLATION HERO UPGRADE
+========================================== */
+
+/* Adjust hero layout balance */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.hero-text {
+  flex: 0.9;
+}
+
+.hero-image {
+  flex: 1.3; /* Give more dominance to summary box */
+  display: flex;
+  justify-content: center;
+}
+
+
+/* Enlarge and enhance summary box */
+.hero-image .project-card {
+  max-width: 720px;          /* Increased width */
+  padding: 45px;             /* More breathing space */
+  border-radius: 22px;
+  background-color: #ffffff; /* Clean white card */
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+
+/* Improve headings inside the box */
+.hero-image .project-card h3 {
+  font-size: 24px;
+  margin-bottom: 18px;
+  font-weight: 600;
+}
+
+
+/* Improve bullet spacing */
+.hero-image .project-card ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+.hero-image .project-card li {
+  margin-bottom: 10px;
+}
+
+
+/* Subtle divider styling */
+.hero-image .project-card hr {
+  margin: 25px 0;
+  border: none;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+}
