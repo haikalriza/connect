@@ -1,11 +1,47 @@
-<!-- PROJECT RESOURCES -->
-<section class="resources-section">
-  <div class="container">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel Cancellation Prediction | Haikal Riza</title>
 
-    <div class="project-card resources-card">
-      <h3>Project Resources</h3>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
 
-      <div class="resource-buttons">
+  <!-- HEADER -->
+  <header class="header">
+    <div class="logo">H</div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">About Me</a>
+      <a href="index.html#projects" class="active">Projects</a>
+      <button class="contact-btn">Contact Me</button>
+      <i class="ri-moon-line theme-toggle"></i>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+
+    <!-- LEFT SIDE -->
+    <div class="hero-text">
+      <h1>Hotel Cancellation Prediction</h1>
+
+      <p>
+        A machine learning initiative designed to transform cancellation
+        risk into a controllable strategic lever.
+      </p>
+
+      <p style="margin-top:20px; font-weight:600;">
+        📉 Reduce cancellations: 37% → 20% <br>
+        💰 €4.02M annual revenue at risk <br>
+        🎯 77% recall using Gradient Boosting
+      </p>
+
+      <div style="margin-top:30px;">
         <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
            target="_blank"
            class="contact-btn">
@@ -14,24 +50,89 @@
 
         <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
            target="_blank"
-           class="contact-btn">
+           class="contact-btn"
+           style="margin-left:15px;">
            🐍 View Python Script
         </a>
       </div>
     </div>
 
-  </div>
-</section>
+    <!-- RIGHT SIDE -->
+    <div class="hero-image">
+      <div class="project-card" style="max-width:500px;">
 
+        <h3>Project Summary</h3>
 
-<!-- PRESENTATION PREVIEW -->
-<section class="preview-section">
+        <p><strong>Context:</strong>
+        Haro Hotel experienced a cancellation surge from 15% (2017) to 37% (2018),
+        putting €4.02M in annual revenue at risk due to increased booking flexibility.
+        </p>
 
-  <h3 class="preview-title">Presentation Preview</h3>
+        <p><strong>Goal:</strong>
+        Reduce cancellation rate to 20% within six months by identifying key drivers,
+        predicting high-risk bookings, and designing targeted retention strategies.
+        </p>
 
-  <iframe 
-    src="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
-    class="preview-frame">
-  </iframe>
+        <hr style="margin:20px 0; opacity:0.2;">
 
-</section>
+        <h3>Scope of Work</h3>
+
+        <ul>
+          <li>Built Gradient Boosting model detecting 77% of cancellations</li>
+          <li>Identified 5 key drivers explaining 83% of total risk</li>
+          <li>Analyzed 21.9% YoY increase (€4.02M revenue exposure)</li>
+          <li>Designed retention strategy to recover 35% of at-risk revenue</li>
+        </ul>
+
+      </div>
+    </div>
+
+  </section>
+
+  <!-- PROJECT RESOURCES (WHITE SECTION) -->
+  <section class="resources-section">
+    <div class="container">
+
+      <div class="project-card resources-card">
+        <h3>Project Resources</h3>
+
+        <div class="resource-buttons">
+          <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+             target="_blank"
+             class="contact-btn">
+             📊 View Presentation Deck
+          </a>
+
+          <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
+             target="_blank"
+             class="contact-btn">
+             🐍 View Python Script
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- PRESENTATION PREVIEW (WIDER) -->
+  <section class="preview-section">
+
+    <h3 class="preview-title">Presentation Preview</h3>
+
+    <iframe 
+      src="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+      class="preview-frame">
+    </iframe>
+
+  </section>
+
+  <!-- BACK BUTTON -->
+  <section style="padding: 60px 0; text-align:center;">
+    <a href="index.html" class="contact-btn">
+      ← Back to Portfolio
+    </a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
