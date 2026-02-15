@@ -23,101 +23,77 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero" style="min-height: 60vh;">
+  <!-- HERO SECTION (Same Layout as Main Page) -->
+  <section class="hero">
+
+    <!-- LEFT SIDE -->
     <div class="hero-text">
       <h1>Hotel Cancellation Prediction</h1>
+
       <p>
         A machine learning initiative designed to transform cancellation
         risk into a controllable strategic lever.
       </p>
 
-      <!-- Impact Highlights -->
       <p style="margin-top:20px; font-weight:600;">
-        📉 Target: Reduce cancellations 37% → 20% <br>
+        📉 Reduce cancellations: 37% → 20% <br>
         💰 €4.02M annual revenue at risk <br>
         🎯 77% recall using Gradient Boosting
       </p>
+
+      <div style="margin-top:30px;">
+        <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+           target="_blank"
+           class="contact-btn">
+           📊 View Presentation Deck
+        </a>
+
+        <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
+           target="_blank"
+           class="contact-btn"
+           style="margin-left:15px;">
+           🐍 View Python Script
+        </a>
+      </div>
     </div>
+
+    <!-- RIGHT SIDE (Replaces Profile Image) -->
+    <div class="hero-image">
+      <div class="project-card" style="max-width:500px;">
+
+        <h3>Project Summary</h3>
+
+        <p><strong>Context:</strong>
+        Haro Hotel experienced a cancellation surge from 15% (2017) to 37% (2018),
+        putting €4.02M in annual revenue at risk due to high booking flexibility.
+        </p>
+
+        <p><strong>Goal:</strong>
+        Reduce cancellation rate to 20% within six months by identifying key drivers,
+        predicting high-risk bookings, and designing targeted retention strategies.
+        </p>
+
+        <hr style="margin:20px 0; opacity:0.2;">
+
+        <h3>Scope of Work</h3>
+
+        <ul>
+          <li>Built Gradient Boosting model detecting 77% of cancellations</li>
+          <li>Identified 5 key drivers explaining 83% of total risk</li>
+          <li>Analyzed 21.9% YoY increase (€4.02M revenue exposure)</li>
+          <li>Designed retention strategy to recover 35% of at-risk revenue</li>
+        </ul>
+
+      </div>
+    </div>
+
   </section>
 
-  <!-- PROJECT CONTENT -->
+  <!-- PRESENTATION PREVIEW SECTION -->
   <section class="projects">
     <div class="container">
 
-      <!-- PROJECT SUMMARY -->
-      <div class="project-card" style="margin-bottom: 40px;">
-        <h3>Project Summary</h3>
-
-        <p><strong>Context:</strong><br>
-        Haro Hotel, a futuristic Japanese-style resort, experienced a surge in
-        booking cancellations from 15% in 2017 to 37% in 2018. This increase
-        put approximately €4.02M in annual revenue at risk. The trend was
-        structurally driven by the digitalization of room reservations,
-        increasing booking flexibility but lowering customer commitment.
-        </p>
-
-        <p><strong>Goals:</strong><br>
-        Reduce the cancellation rate from 37% to 20% within six months by
-        identifying key cancellation drivers, predicting high-risk bookings,
-        and designing targeted revenue recovery strategies.
-        </p>
-
-        <p><strong>Process:</strong><br>
-        The project followed a structured analytics workflow:
-        business understanding → data preparation → cleaning →
-        exploratory data analysis (EDA). Diagnostic analysis was conducted
-        using Python’s <em>statsmodels</em> to identify key drivers.
-        A tree-based classification model (Gradient Boosting with GridSearch CV)
-        was developed to predict high-risk bookings.
-        </p>
-
-        <p><strong>Output:</strong><br>
-        The model detects 77% of cancellations, enabling proactive
-        interventions such as milestone-based confirmations and
-        partial deposits for high-risk bookings. Retaining 60% of predicted
-        cancellations would reduce the overall rate to 20% and recover
-        over 35% of at-risk revenue.
-        </p>
-      </div>
-
-      <!-- ACHIEVEMENTS -->
       <div class="project-card">
-        <h3>Scope of Work / Achievements</h3>
-
-        <ul>
-          <li>Developed a Gradient Boosting classification model detecting 77% of high-risk cancellations.</li>
-          <li>Identified five key cancellation drivers explaining 83% of total risk.</li>
-          <li>Analyzed 2018 performance showing a 21.9% YoY increase, risking €4.02M annual revenue.</li>
-          <li>Designed a retention strategy projected to recover 35% of at-risk revenue by reducing cancellation rate to 20%.</li>
-        </ul>
-      </div>
-
-      <!-- PROJECT RESOURCES -->
-      <div class="project-card" style="margin-top:40px;">
-        <h3>Project Resources</h3>
-
-        <div style="display:flex; gap:20px; flex-wrap:wrap; margin-top:20px;">
-
-          <!-- PDF Deck -->
-          <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
-             target="_blank"
-             class="contact-btn">
-             📊 View Presentation Deck
-          </a>
-
-          <!-- Python Script -->
-          <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
-             target="_blank"
-             class="contact-btn">
-             🐍 View Python Script
-          </a>
-
-        </div>
-      </div>
-
-      <!-- EMBEDDED PDF PREVIEW -->
-      <div class="project-card" style="margin-top:40px;">
         <h3>Presentation Preview</h3>
 
         <iframe 
