@@ -64,24 +64,45 @@
         <h3>Project Summary</h3>
 
         <p><strong>Context:</strong>
-        Haro Hotel experienced a cancellation surge from 15% (2017) to 37% (2018),
-        putting €4.02M in annual revenue at risk due to increased booking flexibility.
+        Haro Hotel experienced a surge in booking cancellations from 15% in 2017 to 37% in 2018. 
+        This increase put approximately €4.02M in annual revenue at risk. The trend is structurally 
+        driven by the digitalization of room reservations, which offers high flexibility 
+        but results in low customer commitment.
         </p>
 
         <p><strong>Goal:</strong>
-        Reduce cancellation rate to 20% within six months by identifying key drivers,
-        predicting high-risk bookings, and designing targeted retention strategies.
+        The primary objective was to reduce the hotel booking cancellation rate from 37% to 20% 
+        within a six-month period. This involved identifying key factors driving cancellations, 
+        predicting future cancellation risks for upcoming reservations, and strategizing 
+        targeted interventions to recover at-risk revenue.
         </p>
+
+        <p><strong>Process:</strong>
+        The analytical approach followed a structured workflow: business understanding, 
+        data preparation, cleaning, and exploratory data analysis (EDA). Diagnostic analysis 
+        was performed using Python’s statsmodel to identify drivers, followed by developing 
+        a tree-based classification machine learning model (Gradient Boosting with 
+        GridSearch CV) to predict high-risk bookings.
+        </p>
+
+        <p><strong>Output:</strong>
+        The model successfully detects 77% of cancellations, enabling proactive interventions 
+        such as milestone-based confirmations and partial deposits for high-risk bookings. 
+        Retaining 60% of these predicted cancellations could reduce the overall rate to 20% 
+        and recover over 35% of at-risk revenue. These data-led strategies turn cancellation 
+        management into a controllable strategic lever.
+        </p>
+
 
         <hr style="margin:20px 0; opacity:0.2;">
 
         <h3>Scope of Work</h3>
 
         <ul>
-          <li>Built Gradient Boosting model detecting 77% of cancellations</li>
-          <li>Identified 5 key drivers explaining 83% of total risk</li>
-          <li>Analyzed 21.9% YoY increase (€4.02M revenue exposure)</li>
-          <li>Designed retention strategy to recover 35% of at-risk revenue</li>
+          <li>Developed a tree-based Gradient Boosting classification model to detect 77% of high-risk cancellations for upcoming hotel reservations.</li>
+          <li>Identified five key cancellation drivers—including online bookings and long lead times—explaining 83% of total cancellation risk.</li>
+          <li>Analyzed 2018 performance to reveal a 21.9% year-over-year cancellation increase, putting €4.02M in annual revenue at risk.</li>
+          <li>Formulated a retention strategy to recover 35% of at-risk revenue by reducing the final cancellation rate to 20%.</li>
         </ul>
 
       </div>
