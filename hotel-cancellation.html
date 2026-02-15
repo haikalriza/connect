@@ -13,146 +13,141 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="logo">H</div>
+    <div class="logo" aria-label="Haikal Riza">H</div>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Primary">
       <a href="index.html">Home</a>
       <a href="index.html#about">About</a>
       <a href="index.html#projects" class="active">Projects</a>
-      <button class="contact-btn">Contact</button>
-      <i class="ri-moon-line theme-toggle"></i>
+      <a class="contact-btn" href="mailto:haikalriza@gmail.com">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme">
+        <i class="ri-moon-line" aria-hidden="true"></i>
+      </button>
     </nav>
   </header>
 
-  <!-- HERO -->
-  <section class="hero">
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Hotel Cancellation Prediction</h1>
 
-    <div class="hero-text">
-      <h1>Hotel Cancellation Prediction</h1>
-
-      <p>
-        A machine learning solution transforming cancellation risk into measurable revenue recovery.
-      </p>
-
-      <div class="hero-stats">
-        📉 Reduce cancellations: 37% → 20% <br>
-        💰 €4.02M annual revenue at risk <br>
-        🎯 77% recall using Gradient Boosting
-      </div>
-
-      <div class="hero-buttons">
-        <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="contact-btn">
-           📊 View Presentation
-        </a>
-
-        <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="contact-btn">
-           🐍 View Python Code
-        </a>
-      </div>
-    </div>
-
-    <div class="hero-image">
-      <div class="project-card project-card--narrow">
-    <!-- RIGHT SIDE -->
-    <div class="hero-image">
-      <div class="project-card" style="max-width:500px;">
-
-        <h3>Project Summary</h3>
-
-        <p><strong>Context:</strong>
-        Haro Hotel experienced a surge in booking cancellations from 15% in 2017 to 37% in 2018. 
-        This increase put approximately €4.02M in annual revenue at risk. The trend is structurally 
-        driven by the digitalization of room reservations, which offers high flexibility 
-        but results in low customer commitment.
+        <p>
+          A machine learning solution transforming cancellation risk into measurable revenue recovery.
         </p>
 
-        <p><strong>Goal:</strong>
-        The primary objective was to reduce the hotel booking cancellation rate from 37% to 20% 
-        within a six-month period. This involved identifying key factors driving cancellations, 
-        predicting future cancellation risks for upcoming reservations, and strategizing 
-        targeted interventions to recover at-risk revenue.
-        </p>
+        <div class="hero-stats">
+          <div>Reduce cancellations: 37% → 20%</div>
+          <div>€4.02M annual revenue at risk</div>
+          <div>77% recall using Gradient Boosting</div>
+        </div>
 
-        <p><strong>Process:</strong>
-        The analytical approach followed a structured workflow: business understanding, 
-        data preparation, cleaning, and exploratory data analysis (EDA). Diagnostic analysis 
-        was performed using Python’s statsmodel to identify drivers, followed by developing 
-        a tree-based classification machine learning model (Gradient Boosting with 
-        GridSearch CV) to predict high-risk bookings.
-        </p>
-
-        <p><strong>Output:</strong>
-        The model successfully detects 77% of cancellations, enabling proactive interventions 
-        such as milestone-based confirmations and partial deposits for high-risk bookings. 
-        Retaining 60% of these predicted cancellations could reduce the overall rate to 20% 
-        and recover over 35% of at-risk revenue. These data-led strategies turn cancellation 
-        management into a controllable strategic lever.
-        </p>
-
-
-        <hr style="margin:20px 0; opacity:0.2;">
-
-        <h3>Scope of Work</h3>
-
-        <ul>
-          <li>Developed a tree-based Gradient Boosting classification model to detect 77% of high-risk cancellations for upcoming hotel reservations.</li>
-          <li>Identified five key cancellation drivers—including online bookings and long lead times—explaining 83% of total cancellation risk.</li>
-          <li>Analyzed 2018 performance to reveal a 21.9% year-over-year cancellation increase, putting €4.02M in annual revenue at risk.</li>
-          <li>Formulated a retention strategy to recover 35% of at-risk revenue by reducing the final cancellation rate to 20%.</li>
-        </ul>
-
-      </div>
-    </div>
-
-  </section>
-
-  <!-- PROJECT RESOURCES (WHITE SECTION) -->
-  <section class="resources-section">
-    <div class="container">
-
-      <div class="project-card resources-card">
-        <h3>Project Resources</h3>
-
-        <div class="resource-buttons">
-          <a href="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+        <div class="hero-buttons">
+          <a href="assets/projects/DEEPP-Project-Haikal-Riza.pdf"
              target="_blank"
+             rel="noopener noreferrer"
              class="contact-btn">
-             📊 View Presentation Deck
+            View Presentation
           </a>
 
-          <a href="/connect/assets/projects/hotel_room_cancellations_project_haikal_riza.py"
+          <a href="assets/projects/hotel_room_cancellations_project_haikal_riza.py"
              target="_blank"
+             rel="noopener noreferrer"
              class="contact-btn">
-             🐍 View Python Script
+            View Python Code
           </a>
         </div>
       </div>
 
-    </div>
-  </section>
+      <div class="hero-image">
+        <div class="project-card project-card--narrow">
+          <h3>Project Summary</h3>
 
-<!-- PRESENTATION PREVIEW -->
-  <section class="preview-section">
-    <h3 class="preview-title">Presentation Preview</h3>
+          <p><strong>Context:</strong>
+            Haro Hotel experienced a surge in booking cancellations from 15% in 2017 to 37% in 2018.
+            This increase put approximately €4.02M in annual revenue at risk. The trend is structurally
+            driven by the digitalization of room reservations, which offers high flexibility
+            but results in low customer commitment.
+          </p>
 
-    <iframe 
-      src="/connect/assets/projects/DEEPP-Project-Haikal-Riza.pdf"
-      class="preview-frame">
-    </iframe>
-  </section>
+          <p><strong>Goal:</strong>
+            The primary objective was to reduce the hotel booking cancellation rate from 37% to 20%
+            within a six-month period. This involved identifying key factors driving cancellations,
+            predicting future cancellation risks for upcoming reservations, and strategizing
+            targeted interventions to recover at-risk revenue.
+          </p>
 
-  <!-- BACK -->
-  <section style="padding: 60px 0; text-align:center;">
-    <a href="index.html" class="contact-btn">
-      ← Back to Portfolio
-    </a>
-  </section>
+          <p><strong>Process:</strong>
+            The analytical approach followed a structured workflow: business understanding,
+            data preparation, cleaning, and exploratory data analysis (EDA). Diagnostic analysis
+            was performed using Python’s statsmodel to identify drivers, followed by developing
+            a tree-based classification machine learning model (Gradient Boosting with
+            GridSearch CV) to predict high-risk bookings.
+          </p>
+
+          <p><strong>Output:</strong>
+            The model successfully detects 77% of cancellations, enabling proactive interventions
+            such as milestone-based confirmations and partial deposits for high-risk bookings.
+            Retaining 60% of these predicted cancellations could reduce the overall rate to 20%
+            and recover over 35% of at-risk revenue. These data-led strategies turn cancellation
+            management into a controllable strategic lever.
+          </p>
+
+          <hr class="card-divider">
+
+          <h3>Scope of Work</h3>
+
+          <ul class="scope-list">
+            <li>Developed a tree-based Gradient Boosting classification model to detect 77% of high-risk cancellations for upcoming hotel reservations.</li>
+            <li>Identified five key cancellation drivers—including online bookings and long lead times—explaining 83% of total cancellation risk.</li>
+            <li>Analyzed 2018 performance to reveal a 21.9% year-over-year cancellation increase, putting €4.02M in annual revenue at risk.</li>
+            <li>Formulated a retention strategy to recover 35% of at-risk revenue by reducing the final cancellation rate to 20%.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECT RESOURCES -->
+    <section class="resources-section">
+      <div class="container">
+        <div class="project-card resources-card">
+          <h3>Project Resources</h3>
+
+          <div class="resource-buttons">
+            <a href="assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-btn">
+              View Presentation Deck
+            </a>
+
+            <a href="assets/projects/hotel_room_cancellations_project_haikal_riza.py"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="contact-btn">
+              View Python Script
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PRESENTATION PREVIEW -->
+    <section class="preview-section">
+      <h3 class="preview-title">Presentation Preview</h3>
+
+      <iframe
+        src="assets/projects/DEEPP-Project-Haikal-Riza.pdf"
+        class="preview-frame"
+        title="Hotel cancellation presentation preview">
+      </iframe>
+    </section>
+
+    <!-- BACK -->
+    <section class="section-back">
+      <a href="index.html" class="contact-btn">Back to Portfolio</a>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>

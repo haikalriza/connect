@@ -13,88 +13,88 @@
 
   <!-- HEADER -->
   <header class="header">
-    <div class="logo">H</div>
+    <div class="logo" aria-label="Haikal Riza">H</div>
 
-    <nav class="nav">
-      <a href="#" class="active">Home</a>
+    <nav class="nav" aria-label="Primary">
+      <a href="#home" class="active">Home</a>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <button class="contact-btn">Contact</button>
-      <i class="ri-moon-line theme-toggle"></i>
+      <a class="contact-btn" href="mailto:haikalriza@gmail.com">Contact</a>
+      <button class="theme-toggle" type="button" aria-label="Toggle theme">
+        <i class="ri-moon-line" aria-hidden="true"></i>
+      </button>
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section class="hero">
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+      <div class="hero-text">
+        <h1>Haikal Riza</h1>
 
-    <div class="hero-text">
-      <h1>Haikal Riza</h1>
+        <p>
+          Growth-focused <span class="highlight">Market & Data Analyst</span> specializing in
+          revenue optimization — turning complex data into measurable business impact.
+        </p>
 
-      <p>
-        Growth-focused <span class="highlight">Market & Data Analyst</span> specializing in 
-        revenue optimization — turning complex data into measurable business impact.
-      </p>
-
-      <div class="scroll">
-        <i class="ri-arrow-down-line"></i>
-        <span>Explore My Work</span>
+        <a class="scroll" href="#about">
+          <i class="ri-arrow-down-line" aria-hidden="true"></i>
+          <span>Explore My Work</span>
+        </a>
       </div>
-    </div>
 
-    <div class="hero-image">
-      <div class="image-wrapper">
-        <img src="assets/profile.png" alt="Haikal Riza Profile Photo">
-      </div>
-    </div>
-
-    <!-- Social Icons -->
-    <div class="socials">
-      <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-        <i class="ri-linkedin-fill"></i>
-      </a>
-      <a href="https://github.com" target="_blank" rel="noopener noreferrer">
-        <i class="ri-github-fill"></i>
-      </a>
-    </div>
-
-  </section>
-  
-  <!-- ABOUT -->
-  <section class="about" id="about">
-    <div class="container">
-      <h2 class="section-title">About Me</h2>
-
-      <p class="about-text">
-        I am a data professional with experience in market research and analytics.
-        I specialize in transforming raw data into actionable insights 
-        that drive measurable business outcomes.
-
-        My analytical approach combines business understanding, statistical rigor,
-        and machine learning implementation to solve real-world commercial problems.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJECTS -->
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title">Selected Project</h2>
-
-      <div class="project-grid">
-
-        <div class="project-card">
-          <h3>Hotel Cancellation Prediction</h3>
-          <p>
-            Built a Gradient Boosting model detecting 77% of high-risk cancellations, 
-            enabling strategies to reduce booking cancellations from 37% to 20% 
-            and recover over €4M in annual revenue at risk.
-          </p>
-          <a href="./hotel-cancellation.html">View Case Study →</a>
+      <div class="hero-image">
+        <div class="image-wrapper">
+          <img src="assets/profile.png" alt="Haikal Riza Profile Photo">
         </div>
-
       </div>
-    </div>
-  </section>
+
+      <!-- Social Icons -->
+      <div class="socials" aria-label="Social links">
+        <a href="https://www.linkedin.com/in/haikal-mahfuzh-riza/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <i class="ri-linkedin-fill" aria-hidden="true"></i>
+        </a>
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+          <i class="ri-github-fill" aria-hidden="true"></i>
+        </a>
+      </div>
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+
+        <p class="about-text">
+          I am a data professional with experience in market research and analytics.
+          I specialize in transforming raw data into actionable insights
+          that drive measurable business outcomes.
+
+          My analytical approach combines business understanding, statistical rigor,
+          and machine learning implementation to solve real-world commercial problems.
+        </p>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects" id="projects">
+      <div class="container">
+        <h2 class="section-title">Selected Project</h2>
+
+        <div class="project-grid">
+          <div class="project-card">
+            <h3>Hotel Cancellation Prediction</h3>
+            <p>
+              Built a Gradient Boosting model detecting 77% of high-risk cancellations,
+              enabling strategies to reduce booking cancellations from 37% to 20%
+              and recover over €4M in annual revenue at risk.
+            </p>
+            <a href="./hotel-cancellation.html">View Case Study →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
   <script src="script.js"></script>
 </body>
