@@ -279,6 +279,18 @@ body.dark .contact-btn:hover {
   background: #1e2a2a;
 }
 
+.nav .contact-btn {
+  background: transparent;
+  color: var(--ink);
+  border: 1px solid var(--border);
+  box-shadow: none;
+}
+
+.nav .contact-btn:hover {
+  background: var(--surface);
+  color: var(--ink);
+}
+
 
 /* ==========================================
    HERO IMAGE / PROJECT CARD
@@ -382,10 +394,11 @@ body.dark .contact-btn:hover {
 .contact-card {
   background: var(--surface);
   border-radius: var(--radius);
-  padding: 36px;
+  padding: 44px;
   box-shadow: var(--shadow);
   border: 1px solid var(--border);
-  max-width: 720px;
+  width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -414,13 +427,13 @@ body.dark .contact-btn:hover {
 .form-field input,
 .form-field textarea {
   width: 100%;
-  padding: 12px 14px;
+  padding: 16px 18px;
   border-radius: 12px;
   border: 1px solid var(--border);
   background: var(--surface-muted);
   color: var(--ink);
   font-family: inherit;
-  font-size: 15px;
+  font-size: 16px;
   transition: border 0.2s ease, box-shadow 0.2s ease;
 }
 
