@@ -408,6 +408,18 @@ body.dark .contact-btn:hover {
   justify-content: center;
 }
 
+.skills-group {
+  display: grid;
+  gap: 14px;
+  margin-bottom: 28px;
+}
+
+.skills-label {
+  text-align: center;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 .chip {
   padding: 10px 16px;
   border-radius: 999px;
