@@ -29,3 +29,23 @@ toggle?.addEventListener("click", () => {
   const nextTheme = document.body.classList.contains("dark") ? "light" : "dark";
   applyTheme(nextTheme);
 });
+
+const contactForm = document.querySelector("#contact-form");
+
+contactForm?.addEventListener("submit", (event) => {
+  event.preventDefault();
+  const name = document.querySelector("#contact-name")?.value?.trim() || "";
+  const email = document.querySelector("#contact-email")?.value?.trim() || "";
+  const subject = document.querySelector("#contact-subject")?.value?.trim() || "New message";
+  const message = document.querySelector("#contact-message")?.value?.trim() || "";
+
+  const bodyLines = [
+    `Name: ${name}`,
+    `Email: ${email}`,
+    "",
+    message
+  ];
+
+  const mailto = `mailto:haikalriza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
+  window.location.href = mailto;
+});
