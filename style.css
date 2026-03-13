@@ -431,6 +431,18 @@ body.dark .contact-btn:hover {
   box-shadow: 0 0 0 2px color-mix(in srgb, var(--accent) 35%, transparent);
 }
 
+.form-success {
+  display: none;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.form-success.is-visible {
+  display: block;
+}
+
 .send-btn {
   width: 100%;
   justify-content: center;

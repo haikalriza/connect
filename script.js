@@ -31,6 +31,7 @@ toggle?.addEventListener("click", () => {
 });
 
 const contactForm = document.querySelector("#contact-form");
+const contactSuccess = document.querySelector("#contact-success");
 
 contactForm?.addEventListener("submit", (event) => {
   event.preventDefault();
@@ -47,5 +48,8 @@ contactForm?.addEventListener("submit", (event) => {
   ];
 
   const mailto = `mailto:haikalriza@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(bodyLines.join("\n"))}`;
-  window.location.href = mailto;
+  contactSuccess?.classList.add("is-visible");
+  setTimeout(() => {
+    window.location.href = mailto;
+  }, 200);
 });
